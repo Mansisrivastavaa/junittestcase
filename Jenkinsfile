@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
     tools {
@@ -13,7 +14,7 @@ pipeline {
         }
         stage('Build') {
             steps { 
-                sh 'mvn test'
+                sh 'mvn clean install'
                 }
             }
         }
